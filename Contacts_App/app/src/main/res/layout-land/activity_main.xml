@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Contacts"
+               android:gravity="center"
+               android:textSize="24sp"/>
+
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:id="@+id/contactList"
+               android:descendantFocusability="blocksDescendants">
+           </ListView>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <Button
+                   android:id="@+id/add"
+                   android:text="Add"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp"
+                   android:layout_gravity="bottom|left"/>
+               <Button
+                   android:id="@+id/delete"
+                   android:text="Delete"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp"
+                   android:layout_gravity="bottom|right"
+                   android:layout_marginLeft="160dp"/>
+           </LinearLayout>
+       </LinearLayout>
+
+
+    <!--<fragment-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:name="com.example.tharaphilips.contacts_app.ContactFragment"-->
+        <!--android:layout_weight="2"/>-->
+
+    <!--<fragment-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/contact_details_fragment"-->
+        <!--android:name="com.example.tharaphilips.contacts_app.ContactDetails_Fragment_Fragment"-->
+        <!--android:layout_weight="3"/>-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragment_container"
+            android:layout_marginLeft="20dp">
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>

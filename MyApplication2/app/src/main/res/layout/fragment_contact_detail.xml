@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jai.contactsassi2.ContactDetailFragment">
+
+    <TextView
+        android:textSize="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:layout_gravity="center"/>
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:layout_gravity="left"/>
+    <EditText
+        android:layout_height="wrap_content" android:textSize="20dp"
+        android:layout_width="wrap_content" android:layout_gravity="center"  android:id="@+id/ipname"/>
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:layout_gravity="left"/>
+    <EditText
+        android:layout_height="wrap_content" android:textSize="18dp"
+        android:layout_width="wrap_content" android:layout_gravity="center"  android:id="@+id/ipphone"/>
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relationship :"
+        android:layout_gravity="left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Add Person"
+        android:id="@+id/addpersonbtn"
+        android:onClick="addpersonclick"
+        />
+
+</LinearLayout>

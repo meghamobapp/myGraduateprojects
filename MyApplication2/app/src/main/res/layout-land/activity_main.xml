@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.jai.contactsassi2.MainFragment"
+        android:id="@+id/mainfragment1"
+        tools:layout="@layout/fragment_main">
+    </fragment>
+    <fragment android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.jai.contactsassi2.ContactProfileFragment"
+        android:id="@+id/profilefragment2"
+        tools:layout="@layout/activity_contact_profile">
+    </fragment>
+
+
+</LinearLayout>
